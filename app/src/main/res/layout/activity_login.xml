@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:padding="30dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="8dp"
+        app:helperTextTextColor="#FD0000"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        >
+        <EditText
+            android:maxLength="21"
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            tools:ignore="MissingClass" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="8dp"
+        app:passwordToggleEnabled="true"
+        app:helperTextTextColor="#F10B0B"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        >
+        <EditText
+            android:maxLength="21"
+            android:id="@+id/Loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            tools:ignore="MissingClass" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LogIn"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_rounded"/>
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SignUp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="btn_signupForm"
+        tools:ignore="OnClick,UsingOnClickInXml" />
+</LinearLayout>
